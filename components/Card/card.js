@@ -1,5 +1,7 @@
+import './card.css'
+
 export const card = (cafe) => {
-  return `
+    return `
   <div class= "card">
         <div class="card-img">
             <img src="${cafe.imagen}" alt="${cafe.name}" />
@@ -7,7 +9,7 @@ export const card = (cafe) => {
         <div class="card-body">
             <h2>${cafe.name}</h2>
             <p>${cafe.description}</p>
-            <p class="price">$${cafe.price}</p>
+            <button class="btn">Ver más</button>
         </div>
     </div>
     `;
