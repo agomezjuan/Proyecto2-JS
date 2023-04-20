@@ -4,7 +4,7 @@ export const header = () => {
   return `
       <header>
         <div class="logo">
-          <img src="http://unsplash.it/400/400/" alt="logo" />
+          <img src="img/logo3.jpg" alt="logo">
         </div>
         <nav class="menu">
           <ul>

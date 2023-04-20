@@ -1,18 +1,23 @@
-/* HEADER */
+
 header {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: #232323;
+  color: rgb(255, 255, 255);;
   padding: 15px;
+
 }
 
 header .logo {
-  width: min(30%, 200px);
   margin: 0 auto;
+  width: 180px;
+  height: 160px;
 }
 
-header .logo img {
-  width: 100%;
-  object-fit: cover;
+
+
+.logo img {
+width: 100%;
+margin-bottom: 30px;
+object-fit: contain;
 }
 
 header .menu {

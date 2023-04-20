@@ -25,17 +25,56 @@ const cafes = [
       "El café americano es una bebida que se prepara con café molido, agua y azúcar. Se sirve en una taza o vaso, y se acompaña con leche.",
     price: 15,
   },
+  {
+    name: "Café americano",
+    imagen: "img/cafe-americano.png",
+    description:
+      "El café americano es una bebida que se prepara con café molido, agua y azúcar. Se sirve en una taza o vaso, y se acompaña con leche.",
+    price: 15,
+  },
+  {
+    name: "Café americano",
+    imagen: "img/cafe-americano.png",
+    description:
+      "El café americano es una bebida que se prepara con café molido, agua y azúcar. Se sirve en una taza o vaso, y se acompaña con leche.",
+    price: 15,
+  },
+  {
+    name: "Café americano",
+    imagen: "img/cafe-americano.png",
+    description:
+      "El café americano es una bebida que se prepara con café molido, agua y azúcar. Se sirve en una taza o vaso, y se acompaña con leche.",
+    price: 15,
+  },
+  {
+    name: "Café americano",
+    imagen: "img/cafe-americano.png",
+    description:
+      "El café americano es una bebida que se prepara con café molido, agua y azúcar. Se sirve en una taza o vaso, y se acompaña con leche.",
+    price: 15,
+  },
+  {
+    name: "Café americano",
+    imagen: "img/cafe-americano.png",
+    description:
+      "El café americano es una bebida que se prepara con café molido, agua y azúcar. Se sirve en una taza o vaso, y se acompaña con leche.",
+    price: 15,
+  },
+  {
+    name: "Café americano",
+    imagen: "img/cafe-americano.png",
+    description:
+      "El café americano es una bebida que se prepara con café molido, agua y azúcar. Se sirve en una taza o vaso, y se acompaña con leche.",
+    price: 15,
+  },
 ];
 
 export const main = () => {
   return `
     <main>
       <section>
-        <h1>MAKING PEOPLE HAPPY</h1>
-
-        <h2>COFFEE SHOP.</h2>
-
-        <div class="cafe__container">
+       
+        <div class="cafe__container" id="shop">
           ${cafes.map((cafe) => `${card(cafe)}`).join("")}
         </div>
       </section>
