@@ -5,67 +5,112 @@ import cafeOlla from "../../assets/images/cafe.png";
 
 const cafes = [
   {
-    name: "Café de olla",
-    imagen: cafeOlla,
+    name: "Espresso",
+    imagen: "assets/cafe2.jpeg",
     description:
-      "El café de olla es un café preparado con café molido, azúcar, canela y agua. Se sirve en una olla de barro o de metal, y se acompaña con leche condensada, crema o nata.",
-    price: 20,
+      "Un café muy concentrado hecho al pasar agua caliente a través de café molido finamente. Tiene un sabor intenso y se sirve en pequeñas tazas.",
+    price: 3.5,
+    intensidad: "Fuerte",
+    aroma: "Galleta",
   },
   {
-    name: "Café con leche",
-    imagen: "img/cafe.png",
+    name: "Americano",
+    imagen: "assets/cafe3.jpeg",
     description:
-      "El café con leche es una bebida que se prepara con café molido, agua y leche. Se sirve en una taza o vaso, y se acompaña con azúcar.",
-    price: 15,
+      "Un espresso al que se le agrega agua caliente para diluirlo. Tiene un sabor más suave que el espresso puro.",
+    price: 4,
+    intensidad: "Suave",
+    aroma: "Dulce",
   },
   {
-    name: "Café americano",
-    imagen: "img/cafe-americano.png",
+    name: "Latte",
+    imagen: "assets/cafe1.jpeg",
     description:
-      "El café americano es una bebida que se prepara con café molido, agua y azúcar. Se sirve en una taza o vaso, y se acompaña con leche.",
-    price: 15,
+      "Una bebida de café hecha con espresso y leche caliente. Puede ser aromatizado con jarabes como vainilla o caramelo.",
+    price: 2.85,
+    intensidad: "Fuerte",
+    aroma: "Floral",
   },
   {
-    name: "Café americano",
-    imagen: "img/cafe-americano.png",
+    name: "Cappuccino",
+    imagen: "assets/cafe6.jpeg",
     description:
-      "El café americano es una bebida que se prepara con café molido, agua y azúcar. Se sirve en una taza o vaso, y se acompaña con leche.",
-    price: 15,
+      "Similar al latte, pero con una capa de espuma de leche en la parte superior. Tradicionalmente se toma por la mañana en Italia.",
+    price: 4.5,
+    intensidad: "Fuerte",
+    aroma: "Galleta",
   },
   {
-    name: "Café americano",
-    imagen: "img/cafe-americano.png",
+    name: "Macchiato",
+    imagen: "assets/cafe7.jpg",
     description:
-      "El café americano es una bebida que se prepara con café molido, agua y azúcar. Se sirve en una taza o vaso, y se acompaña con leche.",
-    price: 15,
+      "Una pequeña cantidad de leche caliente y espumada se agrega a un espresso, creando una bebida fuerte y con un toque cremoso.",
+    price: 2.5,
+    intensidad: "Fuerte",
+    aroma: "Floral",
   },
   {
-    name: "Café americano",
-    imagen: "img/cafe-americano.png",
+    name: "Mocha",
+    imagen: "assets/cafe4.jpeg",
     description:
-      "El café americano es una bebida que se prepara con café molido, agua y azúcar. Se sirve en una taza o vaso, y se acompaña con leche.",
-    price: 15,
+      "Una bebida de café que combina espresso, leche caliente y chocolate. A menudo se adorna con crema batida y virutas de chocolate.",
+    price: 5,
+    intensidad: "Media",
+    aroma: "Avellana",
   },
   {
-    name: "Café americano",
-    imagen: "img/cafe-americano.png",
+    name: "Flat White",
+    imagen: "assets/cafe8.jpg",
     description:
-      "El café americano es una bebida que se prepara con café molido, agua y azúcar. Se sirve en una taza o vaso, y se acompaña con leche.",
-    price: 15,
+      "Una bebida de café originaria de Australia y Nueva Zelanda, hecha con espresso y leche al vapor. Se distingue por tener menos espuma que un cappuccino.",
+    price: 5.5,
+    intensidad: "Media",
+    aroma: "Avellana",
   },
   {
-    name: "Café americano",
-    imagen: "img/cafe-americano.png",
+    name: "Frappé",
+    imagen: "assets/cafe5.jpeg",
     description:
-      "El café americano es una bebida que se prepara con café molido, agua y azúcar. Se sirve en una taza o vaso, y se acompaña con leche.",
-    price: 15,
+      "Un café frío batido con hielo, leche y jarabes dulces. A menudo se sirve con crema batida en la parte superior.",
+    price: 6,
+    intensidad: "Suave",
+    aroma: "Avellana",
   },
   {
-    name: "Café americano",
-    imagen: "img/cafe-americano.png",
+    name: "Irish Coffee",
+    imagen: "assets/cafe9.jpg",
     description:
-      "El café americano es una bebida que se prepara con café molido, agua y azúcar. Se sirve en una taza o vaso, y se acompaña con leche.",
-    price: 15,
+      "Una bebida alcohólica que combina café caliente, whisky irlandés y crema batida. Es una bebida perfecta para después de la cena.",
+    price: 7.5,
+    intensidad: "Suave",
+    aroma: "Dulce",
+  },
+  {
+    name: "Affogato",
+    imagen: "assets/cafe10.jpg",
+    description:
+      "Un affogato es una bola de helado de vainilla con un shot de espresso caliente servido encima. Es una mezcla deliciosa de frío y caliente, con un sabor rico y complejo.",
+    price: 6,
+    intensidad: "Suave",
+    aroma: "Galleta",
+  },
+  {
+    name: "Doppio",
+    imagen: "assets/cafe11.jpg",
+    description:
+      "Un doppio es una doble ración de espresso. Se prepara con una doble cantidad de café molido y se extrae en una taza más pequeña. Es una opción ideal para aquellos que quieren una dosis de cafeína más fuerte.",
+    price: 4,
+    intensidad: "Media",
+    aroma: "Floral",
+  },
+  {
+    name: "Turkish Coffee",
+    imagen: "assets/cafe12.jpg",
+    description:
+      "El café turco es una bebida de café muy finamente molido, hervida en una pequeña cacerola con agua y azúcar. Se caracteriza por su cuerpo espeso y sabor fuerte, con una espuma fina en la parte superior.",
+    price: 3,
+    intensidad: "Fuerte",
+    aroma: "Dulce",
   },
 ];
 
@@ -73,7 +118,6 @@ export const main = () => {
   return `
     <main>
       <section>
-       
         <div class="cafe__container" id="shop">
           ${cafes.map((cafe) => `${card(cafe)}`).join("")}
         </div>

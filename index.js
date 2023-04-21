@@ -19,3 +19,6 @@ app.insertAdjacentHTML("beforeend", main());
 
 //Insertar el main en el DOM
 app.insertAdjacentHTML("afterend", footer());
+
+// const buscador = document.querySelector(".buscador");
+// buscador.addEventListener(input, buscar);

@@ -60,12 +60,11 @@ footer {
 
   
  .menu-footer ul li a {
-    font-weight: 400%;
-    color: white;
+    color: rgba(193, 173, 173, 0.737);
     text-decoration: none;
-    font-weight: 1000;
+    font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 13px;
   }
   
 .redes-sociales{
