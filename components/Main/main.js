@@ -114,12 +114,22 @@ const cafes = [
   },
 ];
 
-export const main = () => {
+export const main = (intensidad) => {
   return `
     <main>
       <section>
+      <div class="filtro">
+      <form>
+      <label for="Fuerte"><input name="intensidad" type="radio" value="Fuerte" id="Fuerte">Fuerte</label>
+      <label for="Media"><input name="intensidad" type="radio" value="Media" id="Media">Media</label>
+      <label for="Suave"><input name="intensidad" type="radio" value="Suave" id="Suave">Suave</label>
+      </form>
+      </div>
         <div class="cafe__container" id="shop">
-          ${cafes.map((cafe) => `${card(cafe)}`).join("")}
+          ${cafes
+            .filter((cafe) => cafe.intensidad === intensidad)
+            .map((cafe) => `${card(cafe)}`)
+            .join("")}
         </div>
       </section>
     </main>
