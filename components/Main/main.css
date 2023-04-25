@@ -16,6 +16,15 @@
         gap: 2rem;
     }  
 }
+.filtro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+    width: 100%;
+}
 
 .filtro form {
     display: flex;
@@ -39,7 +48,26 @@
     cursor: pointer;
 }
 
-.filtro input:checked + label {
+.filtro input:checked + label,
+.filtros_selector input:checked + label {
     background-color: #000;
     color: #fff;
+}
+
+.filtro h3 {
+    text-align: center;
+}
+
+.filtros_selector {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px;
+    width: 100%;
+}
+
+.intensidad_selector,
+.precio_selector, 
+.aroma_selector {
+    display: none;
 }

@@ -26,7 +26,7 @@ app.insertAdjacentHTML("afterend", footer());
 // app.insertAdjacentHTML("beforeend", contact());
 
 //FILTROS
-function filtrar() {
+function filtrarIntensidad() {
   // Obtener todos los radios
   const radios = document.querySelectorAll("input[name=intensidad]");
   // Obtener el contenedor de los cafés
@@ -34,6 +34,7 @@ function filtrar() {
 
   // Variable para guardar el valor del radio seleccionado
   let intensidad = "";
+  let aroma = "";
 
   // Agregar un listener a cada radio
   radios.forEach(radio => {
@@ -55,4 +56,45 @@ function filtrar() {
   });
 }
 
-filtrar();
+filtrarIntensidad();
+
+//FILTRO Intensidad
+const intensidad = document.querySelector("#intensidad");
+intensidad.addEventListener("change", () => {
+  const contenedor_intensidad = document.querySelector(".intensidad_selector");
+  const contenedor_aroma = document.querySelector(".aroma_selector");
+  const contenedor_precio = document.querySelector(".precio_selector");
+
+  if (intensidad.checked) {
+    contenedor_intensidad.style.display = "block";
+    contenedor_aroma.style.display = "none";
+    contenedor_precio.style.display = "none";
+  } else contenedor_intensidad.style.display = "none";
+});
+
+//FILTRO Precio
+const precio = document.querySelector("#precio");
+precio.addEventListener("change", () => {
+  const contenedor_intensidad = document.querySelector(".intensidad_selector");
+  const contenedor_aroma = document.querySelector(".aroma_selector");
+  const contenedor_precio = document.querySelector(".precio_selector");
+  if (precio.checked) {
+    contenedor_precio.style.display = "block";
+    contenedor_aroma.style.display = "none";
+    contenedor_intensidad.style.display = "none";
+  } else contenedor_precio.style.display = "none";
+});
+
+//FILTRO Aroma
+const aroma = document.querySelector("#aroma");
+aroma.addEventListener("change", () => {
+  const contenedor_aroma = document.querySelector(".aroma_selector");
+  const contenedor_intensidad = document.querySelector(".intensidad_selector");
+  const contenedor_precio = document.querySelector(".precio_selector");
+
+  if (aroma.checked) {
+    contenedor_aroma.style.display = "block";
+    contenedor_intensidad.style.display = "none";
+    contenedor_precio.style.display = "none";
+  } else contenedor_aroma.style.display = "none";
+});
