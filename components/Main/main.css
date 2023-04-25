@@ -16,3 +16,30 @@
         gap: 2rem;
     }  
 }
+
+.filtro form {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px;
+    width: 100%;
+}
+
+.filtro input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    display: none;
+}
+
+.filtro label {
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.filtro input:checked + label {
+    background-color: #000;
+    color: #fff;
+}
